@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Latihan2">
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Latihan 2 - Merubah Warna Buttom"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHasilLat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Pilihan"
+        app:layout_constraintEnd_toStartOf="@id/Text"
+        app:layout_constraintStart_toStartOf="@id/layoutNama"
+        app:layout_constraintTop_toTopOf="@id/layoutNama" />
+
+    <RadioGroup
+        android:id="@+id/layoutNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Text">
+
+        <RadioButton
+            android:id="@+id/merah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="merah" />
+
+        <RadioButton
+            android:id="@+id/hijau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hijau" />
+
+        <RadioButton
+            android:id="@+id/biru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="biru" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btProsesLatihanWarna"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Proses"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutNama" />
+</androidx.constraintlayout.widget.ConstraintLayout>

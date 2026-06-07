@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
+    tools:context=".Tugas">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tugas 1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/lamputugas1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/ic_lamp_light_off" />
+
+    <Button
+        android:id="@+id/btprosestugas1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:insetTop="20dp"
+        android:text="TURN ON"
+        app:cornerRadius="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonPutih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Putih" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKuning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kuning" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBiru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biru" />
+    </RadioGroup>
+</LinearLayout>
